@@ -3,9 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 body{
+    background: black;
     height: 100vh;
     display: grid;
     grid-template-areas: 
@@ -13,7 +12,8 @@ body{
     "main"
     "footer"
     ;
-    grid-template-rows: 120px 1fr 200px;
+    grid-template-rows: 120px 1fr auto;
+    gap: 25px;
 
 }
 
@@ -45,6 +45,10 @@ footer{
     grid-area: footer;
     display: flex;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 20px;
 }
 section{
     flex: 1;
@@ -127,4 +131,60 @@ nav ul li{
     
     
 }
+.görünüm{
 
+ 
+
+    
+}
+.donanim{
+
+
+
+    
+}
+.far{
+
+justify-self: flex-start;
+margin-bottom: 50px;
+
+
+
+}
+.turbo{
+
+
+}
+footer>section>h3{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+footer >section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+footer > section > img{
+    width: 160px;
+    height: 130px;
+}
+
+
+footer > section:nth-child(3) > h3{
+    
+
+}
+footer > section > a{
+    justify-self: center;
+    align-self: flex-end;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 32px;
+    padding-right: 5px;
+}
