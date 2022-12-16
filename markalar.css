@@ -9,9 +9,7 @@ body{
     display: grid;
     grid-template-areas: 
     "header"
-    "main"
-    "footer"
-    ;
+    "main";
     grid-template-rows: 120px 1fr auto;
     gap: 25px;
 
@@ -50,4 +48,24 @@ nav ul li{
     position: relative;
     left: 300px;
     top: 40px;
-    margin-left: -45px;}
+    margin-left: -45px;
+}
+.cont1 > section{
+    height: 400px;
+    width: 300px;
+    border: 1px solid white;
+}
+.cont1{
+
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+   padding: 30px;
+}
+h3{
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
