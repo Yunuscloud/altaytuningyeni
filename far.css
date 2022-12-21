@@ -79,19 +79,20 @@ main > section {
     padding: 10px;
 }
 main > section > div:nth-child(1){
-    background-image: url("images/sarı\ araba.jpg");
+    background-image: url("images/halojen\ far.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
 }
 main > section > div:nth-child(2){
-    background-image: url("images/kırmızı\ araba.jpg");
+    background-image: url("images/xenon\ far.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 main > section > div:nth-child(3){
-    background-image: url("images/kırmızı\ far.jpg");
+    background-image: url("images/led\ far.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -99,10 +100,12 @@ main > section > div:nth-child(3){
 main > section > div:hover{
     height: 410px;
     width: 410px;
+    opacity: 0.8;
 }
-main > section > div > h4{
-    color: white;
+main > section > div > h2{
+    color: rgb(255, 255, 255);
     font-family: 'Kanit', sans-serif;    
-    font-size: 30px;   
-   
+    font-size: 40px; 
+    text-shadow: 0 0 70px #000000, 0 0 5px #000000;
 }
+
