@@ -41,15 +41,7 @@ main{
     background-color: black;
     color: white;
 }
-footer{
-    grid-area: footer;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    padding-bottom: 20px;
-}
+
 section{
     flex: 1;
 }
@@ -155,36 +147,59 @@ margin-bottom: 50px;
 
 
 }
-footer>section>h3{
-    color: white;
-    display: flex;
-    justify-content: center;
-}
-footer >section{
 
+
+footer{
+    grid-area: footer;
     display: flex;
-    flex-direction: column;
+    gap: 20px;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    background-color: black;
+    padding-bottom: 20px;
     
 }
-footer > section > img{
-    width: 170px;
-    height: 140px;
-}
-
-
-footer > section:nth-child(3) > h3{
+footer >section{
+    flex: 1 1 23%;
+    display: flex;
+    /*/flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+    /*gap: 30px;*/
     
-
 }
 footer > section > a{
-    justify-self: center;
-    align-self: flex-end;
+    flex: 1 1 100%;
+    
+    display: flex;
+    
+    height: 300px;
+    
+    /*justify-self: center;
+    align-self: flex-end;*/
+    
     text-decoration: none;
     color: white;
     font-weight: bolder;
     font-size: 32px;
     padding-right: 5px;
 }
+footer > section  img{
+    flex: 1 1 80%;
+    height: 100%;
+    
+}
+footer>section>h3{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+footer > section:nth-child(3) > h3{
+    
+
+}
+

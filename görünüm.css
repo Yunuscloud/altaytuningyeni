@@ -47,12 +47,17 @@ nav ul li{
     margin-left: -45px;
 }
 main{
+    background-image: url(images/lastik.jpg);
+    background-repeat: no-repeat;
+    background-position: right -30px;
+    background-size: 50%;
    padding: 30px;
    padding-top: 80px;
     height: 85vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+    
 }
 main > h1{
     font-family: 'Unbounded', cursive;
