@@ -47,62 +47,34 @@ nav ul li{
     margin-left: -45px;
 }
 main{
-   padding: 30px;
-   padding-top: 80px;
-    height: 85vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-main > h1{
-    font-family: 'Unbounded', cursive;
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-main > p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 17px;
-}
-main > section > div{
-    height: 400px;
-    width: 400px;
-   cursor: pointer;
-    margin: 20px;
-    display: flex;
-    align-items: flex-end;
+    grid-area: main;
     padding: 30px;
-   
-}
-main > section {
-    margin-top: 50px;
     display: flex;
-    padding: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
 }
-main > section > div:nth-child(1){
-    background-image: url("images/sarı\ araba.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+section{
+    height: 600px;
+    width: 400px;
+     border: 1px solid rgb(0, 0, 0);
+     margin: 40px;
 }
-main > section > div:nth-child(2){
-    background-image: url("images/kırmızı\ araba.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+section > div{
+    height: 500px;
+
 }
-main > section > div:nth-child(3){
-    background-image: url("images/kırmızı\ far.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+section > div > img {
+    height: 500px;
+    width:400px;
 }
-main > section > div:hover{
-    height: 410px;
-    width: 410px;
-}
-main > section > div > h4{
-    color: white;
-    font-family: 'Kanit', sans-serif;    
-    font-size: 30px;   
-   
+.cont{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
 }
