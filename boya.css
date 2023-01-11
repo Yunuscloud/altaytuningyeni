@@ -14,52 +14,53 @@ body{
     flex-wrap: wrap;
 }
 header{
-    flex: 1;
-    grid-area: header;
-    display: flex;
-    gap: 50px;
-    justify-content: space-between;
-    align-items: center;
-   background-color: rgb(0, 0, 0);
-    height: 15vh;   
-    flex-wrap: wrap;
+  padding: 0 4rem;
+  min-height: 250px;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+      
 } 
 header > h1{
-    flex: 20% ;
-    
-    
-    font-family: sans-serif;
-    color: white;
+  color: white;
+  font-family: sans-serif;
 }
 header > img{
-    
-    flex: 0 0 150px;
-    height: 150px;
-    margin-left: 20px;
+flex: 1 1 150px;
+max-width: 15%;
+height: 150px;
+
+
+
+
 
 }
-header > nav{
-    flex: 1 1 750px;
-    height: 100%;
-    max-width: 50%;
+header>nav{
+flex: 1 1 500px;
+max-width: 20%;
+display: flex;
+
+
 }
-nav >ul{
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
+header>nav>ul{
+flex: 1;
+max-width: 100%;
+display: flex;
+justify-content: center;
+gap: 2rem;
 }
-nav ul li a{
-    text-decoration: none;
-    justify-content: space-between ;
-    text-align: right;
-    color: rgb(255, 255, 255);
+header>nav ul li a{
+color: white;
+text-decoration: none;
+justify-content: space-between ;
+text-align: right;
+
 }
-nav ul li{
-    display: inline-block;
-    flex: 0 1 100px;
-    text-align: right;
-    position: relative;
+header>nav ul li{
+
+font-weight: bold;
 
 }
 main{
@@ -110,22 +111,14 @@ section > p {
 }
 
 
-@media(max-width:1080px){
+@media(min-width:1080px){
     .cont{
         margin-left: 1rem;
         margin-right: 1rem;
     }
 }
 
-@media(max-width:991px){
-    .header{
-        padding: 15px 20px;
-    }
-    .main{
-        padding: 3rem 0 1rem;
-    }
-    
-}
+
 @media(max-width:768px){
     .header{
         padding: 18px 0;
@@ -146,24 +139,40 @@ section > p {
 
 }
 
-@media(max-width:607px){
-    .main{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    header{
-        justify-content: center;
-        align-items: center;
-    }
-}
+@media(max-width:600px){
 
-@media(max-width:727px){
-    .main{
-        font-size: 0.9rem;
-    }
-    .main h2{
-        font-size: 1.4rem;
-    }
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    gap: 1rem;
+  }
+
+  header > img{
+    flex: 1 1 150px;
+    max-width: 50%;
+    height: 150px;
+    margin-left: 20px;
+  }
+  
+  header>nav{
+    flex: 1 1 500px;
+    max-width: 100%;
+    display: flex;
+  }
+
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  main > p{
+    width: 70%;
+  }
 }
 .lightrope {
     text-align: center;

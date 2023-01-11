@@ -12,39 +12,54 @@ body{
     flex-wrap: wrap;
 }
 header{
-    grid-area: header;
-    display: flex;
-   background-color: rgb(0, 0, 0);
-    height: 15vh;   
-    flex-wrap: wrap;
+  padding: 0 4rem;
+  min-height: 250px;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+      
 } 
 header > h1{
-    margin-top: 40px;
-    margin-left: -50px;
-    font-family: sans-serif;
-    color: white;
+  color: white;
+  font-family: sans-serif;
 }
 header > img{
-    margin: 0 50px;
-    width: 15%;
-    height: 150px;
-    margin-left: 20px;
+flex: 1 1 150px;
+max-width: 15%;
+height: 150px;
+
+
+
+
 
 }
-nav ul li a{
-    text-decoration: none;
-    justify-content: space-between ;
-    text-align: right;
-    color: rgb(255, 255, 255);
+header>nav{
+flex: 1 1 500px;
+max-width: 20%;
+display: flex;
+
+
 }
-nav ul li{
-    display: inline-block;
-    margin: 0 70px;
-    text-align: right;
-    position: relative;
-    left: 300px;
-    top: 40px;
-    margin-left: -45px;
+header>nav>ul{
+flex: 1;
+max-width: 100%;
+display: flex;
+justify-content: center;
+gap: 2rem;
+}
+header>nav ul li a{
+color: white;
+text-decoration: none;
+justify-content: space-between ;
+text-align: right;
+
+}
+header>nav ul li{
+
+font-weight: bold;
+
 }
 main{
     padding: 30px;
@@ -171,6 +186,21 @@ main{
  
     
  }
+ @media (max-width: 600px){
+  main > section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main{
+    background-image: none;
+  }
+
+  header{
+    height: 50vh;
+  }
+
+}
  .lightrope {
     text-align: center;
     white-space: nowrap;
@@ -277,4 +307,40 @@ main{
       box-shadow: 0px 4.6666666667px 24px 3px rgba(247, 0, 148, 0.2);
     }
   }
+  @media(max-width:600px){
+
+    header{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      
+    }
+    section>h1{
+      font-size: 40px;
+      font-family: 'Chivo Mono', monospace;
+  } 
+  section>h3{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -80px;
+  }
+    header > img{
+      flex: 1 1 150px;
+      max-width: 50%;
+      height: 150px;
+      margin-left: 20px;
+      
+      
+      
+  
+  }
+  header>nav{
+    flex: 1 1 500px;
+    max-width: 100%;
+    display: flex;
+    
+    
+  }
+}
   
