@@ -351,6 +351,13 @@ section > .araba{
 }
 
 @media(max-width:600px){
+  html,
+  body{
+    height: 100%;
+    width: 100%;
+  }
+
+  
 
   header{
     flex-direction: column;
@@ -399,5 +406,6 @@ main{
 main>section:last-child{
   display: none;
 }
+
 
 }
